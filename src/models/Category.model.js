@@ -6,6 +6,9 @@ const categorySchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    icon: {
+      type: String,
+    },
     name_ascii: {
       type: String,
       required: true,

@@ -63,7 +63,7 @@ module.exports = {
       const products = await ProductModel.find({
         category: category._id,
       })
-        .populate(["category", "author", "publisher"])
+        .populate(["category"])
         .exec();
       res.status(200).json({
         category,
